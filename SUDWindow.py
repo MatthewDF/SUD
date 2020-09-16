@@ -16,7 +16,7 @@ entry_field.pack(fill=tk.X)
 window_txt_display = tk.Text(master=frame, height=30, width=60, bg="black", fg="white")
 window_txt_display.pack(fill=tk.BOTH)
 
-submit = tk.Button(master=entry_field, text="Submit", height=2, width=8)
+submit = tk.Button(master=frame, text="Submit", height=2, width=8)
 submit.pack(side=tk.RIGHT)
 
 window.mainloop()
