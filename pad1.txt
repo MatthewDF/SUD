@@ -1,0 +1,32 @@
+Basic Components
+
+‘Player’ Entity
+An object that has a location
+Commands (like ‘move’) that relocate the player object to a new location
+
+Location matrix/rooms
+Objects that contain other objects, exist as a position in a grid.
+Display paths to nearby rooms
+--
+Freewriting
+
+How do I store an obje
+
+--
+
+class Room:
+	
+	__init__(self, name):
+	room_name = name
+	# Locations have a list (ordered, mutable) of object IDs contained within them
+	# location is a coordinate of two values, x an y. Scope of project will not have z values for height. 
+	# A way to store open doors/paths directions (I.G., 'east : door', 'south : closed')
+	
+	
+class RoomData:
+	# Class intended to store room objects with their location (coordinates) and etc.
+
+	
+class ObjectBody:
+	#Stores object ID (how is this created?), name, and many other values
+	
