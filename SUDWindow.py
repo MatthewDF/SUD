@@ -7,16 +7,19 @@ window = tk.Tk()
 # and if the text is too wide, wrap it.
 
 # Window drawing
-frame = tk.Frame(master=window, bg="black", height=30, width=60)
-frame.pack(fill=tk.BOTH, expand=True)
-
-window_txt_display = tk.Text(master=frame, height=30, width=60, bg="black", fg="white")
+frame_display = tk.Frame(master=window, bg="black", height=30, width=60)
+frame_display.grid(column=0, row=1)
+window_txt_display = tk.Text(master=frame_display, height=30, width=60, bg="black", fg="white")
 window_txt_display.pack(fill=tk.BOTH)
 
-entry_field = tk.Entry(master=window)
-entry_field.pack(fill=tk.X)
+frame_text = tk.Frame(master=window, height=50, width=20)
+frame_text.grid(column=0, row=2, sticky="w")
+entry_field = tk.Entry(master=frame_text, width=68)
+entry_field.pack(padx=2, pady=2)
 
-submit = tk.Button(master=window, text="Submit", height=2, width=8)
+frame_button = tk.Frame(master=window)
+frame_button.grid(column=0, row=2, sticky="e")
+submit = tk.Button(master=frame_button, text="Submit", height=2, width=8)
 submit.pack(side=tk.RIGHT, fill=tk.BOTH)
 
 window.mainloop()
