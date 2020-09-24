@@ -7,15 +7,15 @@ window = tk.Tk()
 # and if the text is too wide, wrap it.
 
 # Window drawing
-frame_display = tk.Frame(master=window, bg="black", height=30, width=60)
+frame_display = tk.Frame(master=window)
 frame_display.grid(column=0, row=1)
-window_txt_display = tk.Text(master=frame_display, height=30, width=60, bg="black", fg="white")
+window_txt_display = tk.Text(master=frame_display, height=30, width=60, bg="black")
 window_txt_display.pack(fill=tk.BOTH)
 
-frame_text = tk.Frame(master=window, height=50, width=20)
+frame_text = tk.Frame(master=window)
 frame_text.grid(column=0, row=2, sticky="w")
 entry_field = tk.Entry(master=frame_text, width=68)
-entry_field.pack(padx=2, pady=2)
+entry_field.pack()
 
 frame_button = tk.Frame(master=window)
 frame_button.grid(column=0, row=2, sticky="e")
